@@ -10,7 +10,12 @@
 	<style>
 		#warning-message { display: none; }
     @media only screen and (orientation:portrait){
-        #console { display:none; }
+        #console { height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
         #warning-message { display:block; }
     }
     @media only screen and (orientation:landscape){
