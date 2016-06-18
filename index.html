@@ -10,13 +10,8 @@
 	<style>
 		#warning-message { display: none; }
     @media only screen and (orientation:portrait){
-        #console { height: 100vw;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
-        #warning-message { displjay:block; }
+        #console { display:none; }
+        #warning-message { display:block; }
     }
     @media only screen and (orientation:landscape){
         #warning-message { display:none; }
@@ -24,7 +19,7 @@
 		body {
 			background-color: #000
 		}
-		#console {
+		body {
 			font-family: courier, monospace;
 			color: #fff;
 			max-width:750px;
